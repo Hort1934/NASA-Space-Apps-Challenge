@@ -1,14 +1,18 @@
-# NASA SPACE APPS CHALLENGE
+#NASA SPACE APP COMPETITION
 
-CHALLENGE - Immersed in the Sounds of Space
+CHALLENGE - Immersing yourself in the sounds of space
 
-Computer vision details
-Video analysis is done for every frame following these steps:
+Developed by the Cosmic composers team 
+
+Team website - https://www.spaceappschallenge.org/2023/find-a-team/cosmic-composers
+
+Details of computer vision
+The video analysis is performed for each frame as follows:
 
 We detect stars using a combination of binary thresholding and DAOStarFinder from Photutils.
-We use SORT to track stars.
-We erase all found stars from the image.
-Using binary thresholding we detect the contours of planets and nebulae. We discern them by roundness and area. Finally we approximate contour with a polygon using OpenCV.
-You can see the work of this algorithm on this image. Notice the blue circle in the middle right - it represents a star that just went off-screen (previous location drawn).
+Use SORT to track the stars.
+Remove all found stars from the image.
+Using binary thresholding, we detect the outlines of planets and nebulae. We distinguish them by their roundness and area. Finally, we approximate the contour with a polygon using OpenCV.
+You can see how this algorithm works in this image. Note the blue circle in the middle right - this is a star that has just moved off the screen (the previous location is drawn).
 
 ![izobrazhenie_qHw17W2 width-1024](https://github.com/Hort1934/NASA-Space-Apps-Challenge/assets/61141309/f09c3d66-4db3-498a-8593-25c2b08e0dbc)
